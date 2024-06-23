@@ -1,7 +1,10 @@
 * {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body, html {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .btn {
@@ -99,7 +102,6 @@ body {
     margin: 0 0;
     width: auto;
     box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
-();
 }
 
 .btn-nav {
@@ -114,7 +116,6 @@ body {
     background-image: url("./assets/cool-background.png");
     height: auto;
     background-size: cover;
-    object-fit: cover;
 }
 
 .hero-text {
@@ -145,9 +146,289 @@ body {
     letter-spacing: 0.2mm;
 }
 
+.background2 {
+    background-image: url("./assets/cool-background.svg");
+    background-size: cover;
+    height: auto;
+}
+
+.base {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    margin-left: 12vw;
+    z-index: -1;
+    margin-top: 7vh;
+    /*top: 0;*/
+    /*left: 0;*/
+    /*right: 0;*/
+    /*bottom: 0;*/
+}
+
+.circ {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 10px solid #0f225e;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+
+.base .circ:nth-child(1) {
+    transform: translate(75px, 0);
+}
+
+.base .circ:nth-child(2) {
+    transform: translate(0, 75px);
+}
+
+.base .circ:nth-child(3) {
+    transform: translate(-75px, 0);
+}
+
+.base .circ:nth-child(4) {
+    transform: translate(0, -75px);
+}
+
+.base .circ:nth-child(5) {
+    transform: translate(53.0325px, 53.0325px);
+}
+
+.base .circ:nth-child(6) {
+    transform: translate(53.0325px, -53.0325px);
+}
+
+.base .circ:nth-child(7) {
+    transform: translate(-53.0325px, 53.0325px);
+}
+
+.base .circ:nth-child(8) {
+    transform: translate(-53.0325px, -53.0325px);
+}
+
+.base:nth-child(2) {
+    transform: rotate(0.1turn);
+}
+
+.base:nth-child(2) {
+    transform: rotate(0.2turn);
+    -webkit-animation: turn-2 6s ease-in-out infinite alternate;
+    animation: turn-2 6s ease-in-out infinite alternate;
+    -webkit-animation-duration: 3s;
+    animation-duration: 3s;
+}
+
+@-webkit-keyframes turn-2 {
+    to {
+        transform: rotate(0.25turn);
+    }
+    from {
+        transform: rotate(0);
+    }
+}
+
+@keyframes turn-2 {
+    to {
+        transform: rotate(0.25turn);
+    }
+    from {
+        transform: rotate(0);
+    }
+}
+
+.base:nth-child(2) .circ {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.base:nth-child(3) {
+    transform: rotate(0.3turn);
+    -webkit-animation: turn-3 6s ease-in-out infinite alternate;
+    animation: turn-3 6s ease-in-out infinite alternate;
+    -webkit-animation-duration: 4.5s;
+    animation-duration: 4.5s;
+}
+
+@-webkit-keyframes turn-3 {
+    to {
+        transform: rotate(0.375turn);
+    }
+    from {
+        transform: rotate(0);
+    }
+}
+
+@keyframes turn-3 {
+    to {
+        transform: rotate(0.375turn);
+    }
+    from {
+        transform: rotate(0);
+    }
+}
+
+.base:nth-child(3) .circ {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.base:nth-child(4) {
+    transform: rotate(0.4turn);
+    -webkit-animation: turn-4 6s ease-in-out infinite alternate;
+    animation: turn-4 6s ease-in-out infinite alternate;
+    -webkit-animation-duration: 6s;
+    animation-duration: 6s;
+}
+
+@-webkit-keyframes turn-4 {
+    to {
+        transform: rotate(0.5turn);
+    }
+    from {
+        transform: rotate(0);
+    }
+}
+
+@keyframes turn-4 {
+    to {
+        transform: rotate(0.5turn);
+    }
+    from {
+        transform: rotate(0);
+    }
+}
+
+.base:nth-child(4) .circ {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.base:nth-child(5) {
+    transform: rotate(0.5turn);
+    -webkit-animation: turn-5 6s ease-in-out infinite alternate;
+    animation: turn-5 6s ease-in-out infinite alternate;
+    -webkit-animation-duration: 7.5s;
+    animation-duration: 7.5s;
+}
+
+@-webkit-keyframes turn-5 {
+    to {
+        transform: rotate(0.625turn);
+    }
+    from {
+        transform: rotate(0);
+    }
+}
+
+@keyframes turn-5 {
+    to {
+        transform: rotate(0.625turn);
+    }
+    from {
+        transform: rotate(0);
+    }
+}
+
+.base:nth-child(5) .circ {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.base:nth-child(6) {
+    transform: rotate(0.6turn);
+    -webkit-animation: turn-6 6s ease-in-out infinite alternate;
+    animation: turn-6 6s ease-in-out infinite alternate;
+    -webkit-animation-duration: 9s;
+    animation-duration: 9s;
+}
+
+@-webkit-keyframes turn-6 {
+    to {
+        transform: rotate(0.75turn);
+    }
+    from {
+        transform: rotate(0);
+    }
+}
+
+@keyframes turn-6 {
+    to {
+        transform: rotate(0.75turn);
+    }
+    from {
+        transform: rotate(0);
+    }
+}
+
+.base:nth-child(6) .circ {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.base:nth-child(7) {
+    transform: rotate(0.7turn);
+    -webkit-animation: turn-7 6s ease-in-out infinite alternate;
+    animation: turn-7 6s ease-in-out infinite alternate;
+    -webkit-animation-duration: 10.5s;
+    animation-duration: 10.5s;
+}
+
+@-webkit-keyframes turn-7 {
+    to {
+        transform: rotate(0.875turn);
+    }
+    from {
+        transform: rotate(0);
+    }
+}
+
+@keyframes turn-7 {
+    to {
+        transform: rotate(0.875turn);
+    }
+    from {
+        transform: rotate(0);
+    }
+}
+
+.base:nth-child(7) .circ {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+.base:nth-child(8) {
+    transform: rotate(0.8turn);
+    -webkit-animation: turn-8 6s ease-in-out infinite alternate;
+    animation: turn-8 6s ease-in-out infinite alternate;
+    -webkit-animation-duration: 12s;
+    animation-duration: 12s;
+}
+
+@-webkit-keyframes turn-8 {
+    to {
+        transform: rotate(1turn);
+    }
+    from {
+        transform: rotate(0);
+    }
+}
+
+@keyframes turn-8 {
+    to {
+        transform: rotate(1turn);
+    }
+    from {
+        transform: rotate(0);
+    }
+}
+
+.base:nth-child(8) .circ {
+    background: rgba(0, 0, 0, 0.05);
+}
+
+
 footer {
     padding: 0 7vw;
     background-color: rgba(0, 0, 0, 0.89);
     color: white !important;
-    z-index: 2;
 }
+
