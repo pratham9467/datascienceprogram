@@ -106,18 +106,21 @@ body {
     font-size: 13px;
 }
 
+.feature2 {
+    background-color: #dbf2ff;
+}
+
+.background {
+    background-image: url("./assets/cool-background.png");
+    height: auto;
+    background-size: cover;
+    object-fit: cover;
+}
+
 .hero-text {
     font-size: 14px;
     line-height: 26px;
 }
-
-
-footer {
-    padding: 0 7vw;
-    background-color: rgba(0, 0, 0, 0.89);
-    color: white !important;
-}
-
 
 .playReel {
     height: 7vw;
@@ -140,4 +143,11 @@ footer {
     color: ivory;
     font-size: 14px;
     letter-spacing: 0.2mm;
+}
+
+footer {
+    padding: 0 7vw;
+    background-color: rgba(0, 0, 0, 0.89);
+    color: white !important;
+    z-index: 2;
 }
