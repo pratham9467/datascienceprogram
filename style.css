@@ -154,9 +154,9 @@ body, html {
     width: 50px;
     border-radius: 50%;
     border: 10px dashed black;
-    transition: border 1s ease-in-out;
     z-index: 1;
     position: relative;
+    transition: border 1s ease-out;
 }
 
 .admission:hover {
@@ -172,6 +172,19 @@ body, html {
         filter: invert();
         border: 9px dashed rgba(0, 0, 0, 0.87);
         scale: 1.3;
+    }
+}
+
+.scaling:hover {
+    animation: scaling 1000ms linear;
+}
+
+@keyframes scaling {
+    0% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1.2);
     }
 }
 
