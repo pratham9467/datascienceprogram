@@ -176,16 +176,30 @@ body, html {
 }
 
 .scaling:hover {
-    animation: scaling 1000ms linear;
+    animation: scaling 600ms ease-in-out;
 }
 
 @keyframes scaling {
     0% {
-        transform: scale(0.9);
+        transform: scale(1.1);
     }
     100% {
-        transform: scale(1.2);
+        transform: scale(1);
     }
+}
+
+.price {
+    width: 17vw;
+    height: 7vh;
+    z-index: 1;
+    color: black;
+    border: 2px solid black;
+    position: relative;
+    transition: background-color 500ms ease-out;
+}
+
+.price:hover {
+    animation: scaling 1000ms linear;
 }
 
 .base {
