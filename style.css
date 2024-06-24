@@ -161,7 +161,7 @@ body, html {
 }
 
 .admission:hover {
-    animation: rotate 500ms linear;
+    animation: rotate 500ms infinite;
 }
 
 @keyframes rotate {
