@@ -148,6 +148,7 @@ body, html {
 .admission {
     margin-left: 16vh;
     display: flex;
+    padding: 1vh;
     align-items: center;
     justify-content: center;
     height: 50px;
@@ -160,7 +161,7 @@ body, html {
 }
 
 .admission:hover {
-    animation: rotate 1000ms infinite;
+    animation: rotate 500ms infinite;
 }
 
 @keyframes rotate {
