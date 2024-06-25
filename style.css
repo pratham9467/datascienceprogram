@@ -1,5 +1,6 @@
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+
 }
 
 body, html {
@@ -105,6 +106,73 @@ body, html {
 
 .feature2 {
     background-color: #dbf2ff;
+}
+
+.slider {
+    height: 26vh;
+    width: auto;
+    border: 1px solid lightgrey;
+    padding: 0 5px;
+    overflow: hidden;
+}
+
+.slider-positionL {
+    position: relative;
+    right: 16px;
+    top: 20vh;
+    z-index: 2;
+}
+
+.slider-positionR {
+    position: relative;
+    top: -14vh;
+    left: 84vw;
+    z-index: 2;
+}
+
+.companies {
+    font-size: 18px;
+    margin: 0;
+    z-index: 0;
+    position: relative;
+    background-color: white;
+    display: inline-block;
+    left: 28vw;
+    padding: 0 6px;
+    top: 15px;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.card {
+    height: 12vh;
+    width: 20vw;
+    display: flex;
+    justify-content: center;
+    border: 2px solid lightgrey;
+    gap: 10vw;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    margin: 0;
+    padding: 6vh 2vw;
+    /*animation: slider 1000ms infinite;*/
+}
+
+
+@keyframes slider {
+    0% {
+        transform: translateX(100%);
+
+    }
+    100% {
+        transform: translateX(-100%);
+    }
 }
 
 .background {
